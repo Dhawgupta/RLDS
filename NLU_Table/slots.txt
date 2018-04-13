@@ -1,0 +1,5 @@
+$DCITY$:"boston"|"pittsburgh"|"washington"|"tacoma"
+$ACITY$:"denver"|"baltimore"|"orlando"|"philadelphia"
+$TIME$:"evening"|"morning"|"afternoon"
+$DATE$:"twenty eight december"|"first january"|"fifteenth june"
+$CLASS$:"business"|"economy"

@@ -1,0 +1,847 @@
+    1  ls
+    2  lspci -vnn | grep VGA -A 12
+    3  lshw 
+    4  lshw -numeric -C display
+    5  python
+    6  l
+    7  ls
+    8  cd ..
+    9  ls
+   10  python
+   11  ls
+   12  cat examples.desktop 
+   13  Following is the example to demonstrate InputStream and OutputStream −
+   14  import java.io.*;
+   15  public class fileStreamTest {
+   16  }
+   17  The above code would create file test.txt and would write given numbers in binary format. Same would be the output on the stdout screen.
+   18  File Navigation and I/O
+   19  There are several other classes that we would be going through to get to know the basics of File Navigation and I/O.
+   20  Directories in Java
+   21  A directory is a File which can contain a list of other files and directories. You use File object to create directories, to list down files available in a directory. For complete detail, check a list of all the methods which you can call on File object and what are related to directories.
+   22  Creating Directories
+   23  There are two useful File utility methods, which can be used to create directories −
+   24  Following example creates "/tmp/user/java/bin" directory −
+   25  Example
+   26  import java.io.File;
+   27  public class CreateDir {
+   28  }
+   29  Compile and execute the above code to create "/tmp/user/java/bin".
+   30  Note − Java automatically takes care of path separators on UNIX and Windows as per conventions. If you use a forward slash (/) on a Windows version of Java, the path will still resolve correctly.
+   31  Listing Directories
+   32  You can use list( ) method provided by File object to list down all the files and directories available in a directory as follows −
+   33  Example
+   34  import java.io.File;
+   35  public class ReadDir {
+   36  }
+   37  This will produce the following result based on the directories and files available in your /tmp directory −
+   38  Output
+   39  test1.txt
+   40  test2.txt
+   41  ReadDir.java
+   42  ReadDir.class
+   43  Previous Page
+   44  Next Page  
+   45  whois
+   46  who
+   47  whatis
+   48  who
+   49  whois
+   50  uname -r
+   51  lsb_release 
+   52  lsb_release -a
+   53  apt-get install vncserver
+   54  sudo 
+   55  sudo su
+   56  apt-get download bpython
+   57  sudo apt-get install bpython
+   58  apt-get download bpython
+   59  ls
+   60  dpkg -i bpython_0.15-2_all.deb --force-not-root --root=$HOME
+   61  apt-get source package
+   62  apt-get source bpython
+   63  source ~/.bashrc 
+   64  python
+   65  curl -O https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh
+   66  ls
+   67  sha256sum Anaconda3-4.3.1-Linux-x86_64.sh 
+   68  bash Anaconda3-4.3.1-Linux-x86_64.sh 
+   69  ls
+   70  rm -rf anaconda3/
+   71  ls
+   72  ls -a
+   73  md5sum Anaconda2-5.1.0-Linux-x86_64.sh 
+   74  man md5sum
+   75  md5sum Anaconda2-5.1.0-Linux-x86_64.sh -c  5b1b5784cae93cf696e11e66983d8756
+   76  man md5sum
+   77  md5sum Anaconda2-5.1.0-Linux-x86_64.sh -t  5b1b5784cae93cf696e11e66983d8756
+   78  nano anacondamd5.txt
+   79  md5sum Anaconda2-5.1.0-Linux-x86_64.sh -c anacondamd5.txt 
+   80  bash Anaconda2-5.1.0-Linux-x86_64.sh 
+   81  rm -rf anaconda2/
+   82  ls
+   83  bash Anaconda2-5.1.0-Linux-x86_64.sh 
+   84  ls
+   85  source ~/.bashrc
+   86  nano .bashrc
+   87  conda list
+   88  conda --help
+   89  conda update -n base conda
+   90  source activate tensorlow
+   91  source activate tensorflow
+   92  python
+   93  clear
+   94  python
+   95  ldconfig -v
+   96  ldconfig -v | grep cuda
+   97  ldconfig -v | grep libcublas
+   98  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
+   99  python
+  100  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
+  101  history
+  102  pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.6.0-cp27-none-linux_x86_64.whl
+  103  python
+  104  ldconfig -v | grep libcublas
+  105  ldconfig -v 
+  106  l
+  107  nano .bashrc
+  108  source ~/.bashrc
+  109  source ./bashrc
+  110  source ~/.bashrc
+  111  source activate tensorflow
+  112  python
+  113  source deactiavte
+  114  source deactivate
+  115  history
+  116  python
+  117  python 
+  118  ls
+  119  history 
+  120  lsb_release -a
+  121  uname -r
+  122  uname
+  123  uname -a
+  124  lshw
+  125  cat /proc/cpuinfo
+  126  python 
+  127  free -m
+  128  free -g
+  129  dpkg -i teamviewer_13.0.9865_amd64.deb 
+  130  remmina -h
+  131  ifconfig
+  132  wwho
+  133  who
+  134  ifconfig
+  135  exit
+  136  python
+  137  wo
+  138  who
+  139  wocat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+  140  cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+  141  cat /usr/local/cuda
+  142  ls /usr/local/cuda
+  143  cat /usr/local/cuda/README 
+  144  cat /usr/local/cuda/version.txt 
+  145  pip install tensorflow-gpu
+  146  python
+  147  pip uninstall tensorflow
+  148  ls
+  149  pip install --ignore-installed --upgrade tf_nightly_gpu-1.head-cp27-none-linux_x86_64.whl 
+  150  python
+  151  pip install keras
+  152  python
+  153  cd RLforDialouge-1/
+  154  ls
+  155  cd TulikaMaam/
+  156  l
+  157  ls
+  158  python train_modified.py 
+  159  pip install gym
+  160  python train_modified.py 
+  161  who]
+  162  who
+  163  nvidia-smi
+  164  watch -n 0.5 nvidia-smi
+  165  watch -n -d 0.5 nvidia-smi
+  166  watch -d -n 0.5 nvidia-smi
+  167  nvidia-smi -l 1
+  168  vidia-settings -q GPUUtilization -q useddedicatedgpumemory
+  169  nvidia-settings -q GPUUtilization -q useddedicatedgpumemory
+  170  nvidia-settings
+  171  nvidia-settings  -h
+  172  nvidia-settings -q all
+  173  top
+  174  htop
+  175  nvidia-smi
+  176  lshw
+  177  lshw -C display
+  178  lspci
+  179  lspci | grep nvidia
+  180  lspci | grep gpu
+  181  lspci | grep Inte
+  182  lspci | grep Nv
+  183  lspci -v
+  184  exit
+  185  ls
+  186  cd ..
+  187  cd TulikaMaam/
+  188  python
+  189  python train_modified.py 
+  190  export CUDA_VISIBLE_DEVICES=''
+  191  python train_modified.py 
+  192  ls
+  193  cd RLforDialouge-1/
+  194  ls
+  195  cd TulikaMaam/
+  196  ls
+  197  python train_modified.py 
+  198  python train_modified.py False
+  199  cd
+  200  nano .bashrc
+  201  who
+  202  tmux
+  203  cd RLforDialouge-1/
+  204  ls
+  205  cd TulikaMaam/
+  206  ls
+  207  python train_modified.py 
+  208  python train_modified.py False
+  209  export CUDA_VISIBLE_DEVICES=''
+  210  python train_modified.py False
+  211  cd RLforDialouge-1/
+  212  l
+  213  cd TulikaMaam/
+  214  ls
+  215  man scree
+  216  man screen
+  217  screen -S env1
+  218  who
+  219  screen -ls
+  220  screen -d -r bigRun
+  221  htop
+  222  tmux new -s runs
+  223  clear
+  224  top
+  225  free -m
+  226  free -h
+  227  top
+  228  clear
+  229  cd RLforDialouge-1/
+  230  cd TulikaMaam/
+  231  ls
+  232  nano Runs.txt
+  233  vim Runs.txt
+  234  cat Runs.txt 
+  235  ls
+  236  man screen
+  237  cd RLforDialouge-1/TulikaMaam/
+  238  history
+  239  screen -d -r env1
+  240  tmux
+  241  tmux ls
+  242  tmux new -s run
+  243  tmux lsls
+  244  tmux ls
+  245  who
+  246  htop
+  247  top
+  248  lscpu
+  249  lspci
+  250  lspci | grep VGA
+  251  tmux ls
+  252  tmux attach -t run
+  253  clear
+  254  tmux ls
+  255  tmux attach -t run
+  256  ls
+  257  tmux ls
+  258  tmux attach -t un
+  259  tmux attach -t run
+  260  tmmux attach -t run
+  261  tmux attach -t run
+  262  tmux ls
+  263  tmux attach -t run
+  264  ls
+  265  clear
+  266  tmux ls
+  267  tmux attach -t run
+  268  tmux ls
+  269  tmux attach -t run
+  270  ls
+  271  tmux ls
+  272  tmux attach -t run
+  273  tmux
+  274  tmux ls
+  275  tmux attach -t run
+  276  ls
+  277  s
+  278  tmux ls
+  279  tmux attach -t run
+  280  htop
+  281  clear
+  282  tmux attach -t run
+  283  tmux attach -t run
+  284  ls
+  285  tmux ls
+  286  tmux attach -t run
+  287  ls
+  288  cd RLforDialouge-1/
+  289  ls
+  290  tmux ls
+  291  tmux attach -t run
+  292  ls
+  293  pytohn
+  294  python
+  295  ipython
+  296  ipython2
+  297  ls
+  298  tmux ls
+  299  tmux attach -t run
+  300  tmux ls
+  301  tmux attach -t run
+  302  cd RLforDialouge-1/TulikaMaam/
+  303  ls
+  304  python train_modified3.py False
+  305  who
+  306  tio
+  307  top
+  308  clear
+  309  ls
+  310  clear
+  311  cd RLforDialouge-1/
+  312  ls
+  313  cd TulikaMaam/
+  314  python test_general.py ./save/NOrmalized_Rewaard_EP_50000_Onehopdialouge_2018-03-09\ 23\:12\:52.942357_\[100\,\ 100\,\ 100\,\ 100\]_0.05_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 5 1
+  315  ;s
+  316  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 5 2
+  317  python test_general.py ./save/FullReashBinaryCheck\(1\,2\,3\)NOrmalized_Rewaard_EP50000Onehopdialouge_2018-03-10\ 02\:15\:53.929022_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 3
+  318  python test_general.py ./save/FullReashBinaryCheck\(1\,2\,3\)NOrmalized_Rewaard_EP50000Onehopdialouge_2018-03-10\ 02\:15\:53.929022_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 4
+  319  python test_general.py ./save/FullReashBinaryCheck\(1\,2\,3\)NOrmalized_Rewaard_EP50000Onehopdialouge_2018-03-10\ 02\:15\:53.929022_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 2
+  320  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 5 2
+  321  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 2
+  322  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 2 2
+  323  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 2
+  324  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 5 2
+  325  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 2 2
+  326  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 5 2
+  327  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 2 2
+  328  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 2
+  329  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 3
+  330  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 3 3
+  331  python test_general.py ./save/BinaryCheck\(1\,2\)NOrmalized_Rewaard_EP100000Onehopdialouge_2018-03-10\ 02\:08\:23.864969_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 4
+  332  python test_general.py ./save/FullReashBinaryCheck\(1\,2\,3\)NOrmalized_Rewaard_EP50000Onehopdialouge_2018-03-10\ 02\:15\:53.929022_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 4
+  333  python test_general.py ./save/FullReashBinaryCheck\(1\,2\,3\)NOrmalized_Rewaard_EP50000Onehopdialouge_2018-03-10\ 02\:15\:53.929022_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 3
+  334  python test_general.py ./save/Onehopdialouge_2018-03-08\ 14\:56\:49.026140_\[8\,\ 12\]_0.01_0.01_0.9_relu_2000weights_w1_w2_w3_0.11_0.1_0.04.h5 1 9
+  335  python test_general.py ./save/Onehopdialouge_2018-03-09\ 22\:45\:08.454356_\[8\,\ 12\]_0.1_0.01_0.9_relu_2000weights_w1_w2_w3_0.25_1_1.h5 1 9
+  336  python test_general.py ./save/Onehopdialouge_2018-03-09\ 22\:45\:08.454356_\[8\,\ 12\]_0.1_0.01_0.9_relu_2000weights_w1_w2_w3_0.25_1_1.h5 1 0
+  337  python test_general.py ./save/Onehopdialouge_2018-03-09\ 22\:45\:16.846578_\[8\,\ 12\]_0.1_0.01_0.9_relu_2000weights_w1_w2_w3_0.25_1_1.h5 1 8
+  338  who
+  339  top
+  340  clear
+  341  top
+  342  htop
+  343  cd RLforDialouge-1/TulikaMaam/
+  344  ;s
+  345  lls
+  346  ls
+  347  clear
+  348  python train_modified2.py False
+  349  clear
+  350  tmux ls
+  351  tmux attach -t run
+  352  cd RLforDialouge-1/
+  353  tmux ls
+  354  tmux attach -t 0
+  355  tmux ls
+  356  tmux attach -t run
+  357  tmux attach -t 0
+  358  tmux attach -t run
+  359  ls
+  360  tmux ls
+  361  tmux attach -t run
+  362  ls
+  363  tmux ls
+  364  tmux attach -t run
+  365  ls
+  366  tmux 
+  367  tmux ls
+  368  tmux attach -t run
+  369  cd RLforDialouge-1/
+  370  cd new\ code/
+  371  cd average2/
+  372  screen -r -d new
+  373  screen -r -d 8296
+  374  cd RLforDialouge-1/
+  375  cd new\ code/
+  376  cd average2/
+  377  screen -r -d new1
+  378  screen -r -d run
+  379  screen -r -d new
+  380  screen -r -d 8784
+  381  ckear
+  382  clear
+  383  ls
+  384  gtk-launch 
+  385  xterm
+  386  cd RLforDialouge-1/
+  387  ls
+  388  cd new\ code/
+  389  ls
+  390  cd average2/
+  391  ls
+  392  screen -ls
+  393  screen -d -r 8784
+  394  python train_modified1.py 
+  395  source activate tensorflowcpu
+  396  python train_modified1.py 
+  397  exit
+  398  l
+  399  ls
+  400  python test_Policy.py ENVOnehopdialouge_2018-03-15\ 02\:25\:29.201130_\[72\]_0.0_0.05_0.9_relu_50000.h5 
+  401  python test_Policy.py ./save/ENVOnehopdialouge_2018-03-15\ 02\:25\:29.201130_\[72\]_0.0_0.05_0.9_relu_50000.h5 
+  402  python test_Policy.py ENVOnehopdialouge_2018-03-15\ 02\:25\:29.201130_\[72\]_0.0_0.05_0.9_relu_50000.h5 
+  403  ipython2
+  404  cd RLforDialouge-1/
+  405  ls
+  406  cd NLU_Mode/
+  407  ls
+  408  cd Table\ 2\(only\ 5\ slots\ and\ 13\ actions\)/
+  409  ls
+  410  cd ..
+  411  ls
+  412  cd ..
+  413  ls
+  414  cd new\ code/
+  415  ls
+  416  cd average2/
+  417  ls
+  418  ipython2
+  419  cd RLforDialouge-1/
+  420  ls
+  421  cd new\ code/
+  422  ls
+  423  cd average2/
+  424  ls
+  425  ls ./save/
+  426  tmux ls
+  427  tmux attach -t run
+  428  cd RLforDialouge-1/
+  429  cd TulikaMaam/
+  430  cd new\code/
+  431  cd new\ code/
+  432  cd..
+  433  cd ..
+  434  cd new\ code/
+  435  octave plotdata.m results_5_2018-03-14 21:26:26.317204_.txt
+  436  sudo install octave
+  437  install octave
+  438  cd RLforDialouge-1/
+  439  cd new\ code/
+  440  cd average2/
+  441  screen -S new
+  442  screen -r -d new
+  443  screen -r -d 8784
+  444  screen -S new1
+  445  python train_modified.py
+  446  cd RLforDialouge-1/new\ code/Averages/
+  447  source activate tensorflowcpu
+  448  python train_modified6.py 
+  449  cd RLforDialouge-1/
+  450  ls
+  451  cd new\ code/Averages/
+  452  ls
+  453  source activate tensorflowcpu
+  454  python train_modified_wohop3.py 
+  455  cd RLforDialouge-1/new\ code/Averages/
+  456  ls
+  457  source activate tensorflowcpu
+  458  python train_modified4.py 
+  459  cd RLforDialouge-1/new\ code/Averages/
+  460  ls
+  461  source activate tensorflowcpu
+  462  python train_modified_wohop6.py 
+  463  cd RLforDialouge-1/new\ code/Averages/
+  464  source activate tensorflowcpu
+  465  python train_modified5.py 
+  466  cd RLforDialouge-1/new\ code/Averages/
+  467  ls
+  468  source activate tensorflowcpu
+  469  python train_modified_wohop4.py 
+  470  clear
+  471  cd RLforDialouge-1/new\ code/Averages/
+  472  source activate tensorflowcpu
+  473  python train_modified_wohop7.py 
+  474  htop
+  475  clear
+  476  cd RLforDialouge-1/new\ code/Averages/
+  477  ls
+  478  source activate tensorflowcpu
+  479  ls
+  480  python train_modified_wohop.py 
+  481  cd RLforDialouge-1/new\ code/Averages/
+  482  source activate tensorflowcpu
+  483  python train_modified_wohop5.py 
+  484  cd RLforDialouge-1/new\ code/Averages/
+  485  ls
+  486  python train_modified7.py 
+  487  cd RLforDialouge-1/
+  488  l
+  489  cd new\ code/
+  490  ls
+  491  python train_DDQN_normal.py 
+  492  clear
+  493  python train_DDQN_normal.py 
+  494  ls
+  495  cd RLforDialouge-1/
+  496  ls
+  497  cd TulikaMaam/
+  498  l
+  499  s
+  500  ls
+  501  python test_general.py ./save/FullReashBinaryCheck\(1\,2\,3\)NOrmalized_Rewaard_EP50000Onehopdialouge_2018-03-10\ 02\:15\:53.929022_\[100\,\ 100\,\ 100\,\ 100\]_0.0_0.02_0.9_relu_50000weights_w1_w2_w3_0.25_1_1.h5 1 4
+  502  cd RLforDialouge-1/NLU_Mode/Table\ 2\(only\ 5\ slots\ and\ 13\ actions\)/
+  503  ls
+  504  python train_table.py 
+  505  ls
+  506  python train_table.py clear
+  507  clear
+  508  python train_table.py 
+  509  htop
+  510  ls
+  511  htop
+  512  cd RLforDialouge-1/new\ code/Averages/
+  513  ls
+  514  source activate tensorflowcpu
+  515  ls
+  516  python train_modified3.py 
+  517  htop
+  518  lscpu
+  519  htop
+  520  clear
+  521  ls
+  522  cd RLforDialouge-1/
+  523  ls
+  524  cd NLU_Mode/
+  525  ls
+  526  cd Table\ 2\(only\ 5\ slots\ and\ 13\ actions\)/
+  527  ls
+  528  mkdir save
+  529  python train_table.py 
+  530  ls
+  531  cd save/
+  532  ls
+  533  rm Table_5_slot_dialouge_2018-03-15\ 09\:57\:04.433120__Updated_environment_0.1_0.9_0.2_100000.pkl Rewards_2018-03-15\ 09\:57\:04.433120_Table.pkl 
+  534  ls
+  535  cd ..
+  536  python train_table.py 
+  537  ls ./save/
+  538  rm ./save/*
+  539  ls ./save/
+  540  python train_table.py 
+  541  python train_table.py clear
+  542  clear
+  543  python train_table.py 
+  544  cd RLforDialouge-1/NLU_Mode/
+  545  ls
+  546  cd Table\ 2\(only\ 5\ slots\ and\ 13\ actions\)/
+  547  ls
+  548  python train_table.py 
+  549  cd RLforDialouge-1/l
+  550  cd RLforDialouge-1/
+  551  ls
+  552  cd new\ code/
+  553  ls
+  554  cd Averages/
+  555  ls
+  556  python train_modified.py 
+  557  clear
+  558  conda activate tensorflowcpu
+  559  conda list
+  560  conda list >check.txt
+  561  nano check.txt 
+  562  ls
+  563  conda info --envs
+  564  source activate tensorflowcpu
+  565  python train_modified.py 
+  566  who
+  567  clear
+  568  cd RLforDialouge-1/
+  569  ls
+  570  cd TulikaMaam/
+  571  ls
+  572  python train_modified4.py False
+  573  htop
+  574  cd RLforDialouge-1/NLU_Mode/
+  575  la
+  576  cd Table\ 2\(only\ 5\ slots\ and\ 13\ actions\)/
+  577  ls
+  578  python train_table.py 
+  579  clear
+  580  python train_table.py 
+  581  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  582  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 3.0
+  583  d RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  584  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  585  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.5
+  586  python train_modified.py False
+  587  clear
+  588  cd ..
+  589  ls
+  590  cd new\ code/
+  591  ls
+  592  lear
+  593  clear
+  594  python train_DDQN.py 
+  595  cd RLforDialouge-1/
+  596  cd new\ code/
+  597  cd average2/
+  598  python train_modified.py 
+  599  screen -S new
+  600  screen -r -d new
+  601  screen -ls
+  602  screen -d -r 8296
+  603  python train_modified.py 
+  604  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  605  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 2.0
+  606  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  607  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.5
+  608  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  609  d RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  610  cclear
+  611  clear
+  612  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  613  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 0.4
+  614  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  615  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 2.5
+  616  d RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  617  d RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 2.5
+  618  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  619  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 2.5
+  620  htop
+  621  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  622  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 0.5
+  623  conda activate│                                       │                                       │
+  624  lear
+  625  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  626  cd RLforDialouge-1/Table/
+  627  ls
+  628  python train_table.py 
+  629  ls
+  630  git clone https://github.com/HadoopIt/rnn-nlu.git
+  631  ping google.com
+  632  clear
+  633  cd rnn-nlu/
+  634  ls
+  635  cat README.md 
+  636  clear
+  637  ls
+  638  data_dir=data/ATIS_samples
+  639  model_dir=model_tmp
+  640  max_sequence_length=50  # max length for train/valid/test sequence
+  641  task=joint  # available options: intent; tagging; joint
+  642  bidirectional_rnn=True  # available options: True; False
+  643  use_attention=True # available options
+  644  echo $data_dir
+  645  echo $model_dir
+  646  echo $max_sequence_length
+  647  echo $task
+  648  python run_multi-task_rnn.py --data_dir $data_dir       --train_dir   $model_dir      --max_sequence_length $max_sequence_length       --task $task       --bidirectional_rnn $bidirectional_rnn       --use_attention $use_attention
+  649  cd rnn-nlu/clear
+  650  ls
+  651  clear
+  652  ls
+  653  cd ..
+  654  ls
+  655  cd RL
+  656  lcd RLforDialouge-1/
+  657  ls
+  658  cd RLforDialouge-1/
+  659  ls
+  660  cd NN
+  661  l
+  662  ks
+  663  ls
+  664  python train_nn.py 
+  665  ls
+  666  cd RLforDialouge-1/
+  667  ls
+  668  cd Table/
+  669  ls
+  670  python train_table.py
+  671  clear
+  672  python train_table.py
+  673  ifconfig
+  674  python train_modified.py 
+  675  clear
+  676  s
+  677  ls
+  678  cd ATIS.keras/
+  679  ls
+  680  cat main.py 
+  681  nano main.py 
+  682  python main.py 
+  683  pip install progressbar
+  684  python main.py 
+  685  python
+  686  pip install progressbar3.32.1
+  687  pip install progressbar2
+  688  python
+  689  python main.py 
+  690  who
+  691  clear
+  692  who
+  693  who | grep tulika | wc
+  694  who | grep tulika 
+  695  who | grep tirt
+  696  who | grep tirt | wc -x
+  697  1
+  698  who | grep tirt | wc 
+  699  who
+  700  free -h
+  701  htop
+  702  clea
+  703  clearl
+  704  clear
+  705  screen -ls
+  706  screen -d -r bigRun 
+  707  python train_modified.py False
+  708  screen -S bigRun
+  709  screen -ls
+  710  screen -d -r env1
+  711  -d -r env1
+  712  screen -d -r env1
+  713  yes
+  714  cd 
+  715  screen -d -r env1
+  716  clear
+  717  htio
+  718  htop
+  719  ls
+  720  ifconfig
+  721  source activate tensorflowcpu
+  722  conda info --envs
+  723  conda create -n tensorflowcpu pip python=2.7
+  724  conda activate tensorflowcpu
+  725  clear
+  726  pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.6.0-cp27-none-linux_x86_64.whl
+  727  pytohn
+  728  pytho
+  729  python
+  730  pip install keras
+  731  ls
+  732  clear
+  733  ls
+  734  lear
+  735  clear
+  736  cd RLforDialouge-1/
+  737  ls
+  738  cd TulikaMaam/
+  739  l
+  740  ls
+  741  python train_identifyw1.py False 0.2
+  742  pip install gym
+  743  conda activate tensorflowcpu
+  744  python train_identifyw1.py False 0.2
+  745  pip install h5py
+  746  python train_identifyw1.py False 0.2
+  747  clear
+  748  screen
+  749  pip install snips-nlu
+  750  clear
+  751  pip install 'snips-nlu[metrics]'
+  752  pip install 'snips-nlu[test]'
+  753  pip install 'snips-nlu[doc]'
+  754  clear
+  755  git clone https://github.com/chsasank/ATIS.keras.git
+  756  cd At
+  757  cd ATIS.keras/
+  758  ls
+  759  jupyter-notebook 
+  760  clear
+  761  ls
+  762  cd data/
+  763  ls
+  764  cclear
+  765  clear
+  766  ls
+  767  clear
+  768  ls
+  769  cd ..
+  770  ls
+  771  cdls
+  772  clear
+  773  ls
+  774  nano main.py
+  775  python main.py 
+  776  cd RLforDialouge-1/
+  777  l
+  778  cd Table/
+  779  ls
+  780  python train_table_no_output.py 
+  781  d RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  782  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 1.0
+  783  cd RLforDialouge-1/TulikaMaam/; conda activate tensorflowcpu; python train_identifyw1.py False 3.0
+  784  clear
+  785  htop
+  786  who
+  787  who | grep tulika
+  788  who | grep tulika | ec
+  789  who | grep tulika | wc
+  790  top
+  791  htop
+  792  cd RLforDialouge-1/
+  793  ls
+  794  cd Table/a
+  795  ls
+  796  clear
+  797  cd Table/
+  798  ls
+  799  python train_table.py 
+  800  ls
+  801  man
+  802  whos
+  803  who
+  804  top
+  805  cd ..
+  806  ls
+  807  cd shad
+  808  ls
+  809  cd ,,
+  810  cd ..
+  811  ls
+  812  cd debajyoty/
+  813  ld
+  814  ls
+  815  cd ..
+  816  ls
+  817  cd tulika
+  818  ld
+  819  ls
+  820  clera
+  821  clear
+  822  tmux ls
+  823  cd ..
+  824  exit
+  825  ls
+  826  pip install gym
+  827  ls
+  828  cd ..
+  829  s
+  830  lls
+  831  ls
+  832  cd
+  833  whos
+  834  wh
+  835  who
+  836  htop
+  837  cpuinfo
+  838  lscpu
+  839  free -m
+  840  free -g
+  841  htop
+  842  ls
+  843  lshw
+  844  htop
+  845  tmux ls
+  846  history
+  847  history > history.txt

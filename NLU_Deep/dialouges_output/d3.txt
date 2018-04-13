@@ -1,0 +1,46 @@
+in load
+Loading the model model.h5 
+Loading FIle model.h5
+in load
+Loading the model model.h5 
+State: [0. 0. 0. 0. 0.]
+[126 126  48 126  78 126  27  94  36 126  33]
+['flights', 'from', 'pittsburgh', 'to', 'baltimore', 'on', 'twenty', 'eight', 'december', 'at', 'afternoon']
+['O', 'O', 'B-fromloc.city_name', 'O', 'B-toloc.city_name', 'O', 'B-depart_date.day_number', 'I-depart_date.day_number', 'B-depart_time.time_relative', 'O', 'B-depart_time.period_of_day']
+[126 126  48 126  78 126  27  94  36 126  33]
+0.999999990709
+[0.99998474, 0.999982, 0.9999969, 0.99998593, 0.9999881, 0.999047, 0.99988675, 0.99993956, 0.41201237, 0.9999523, 0.999468]
+['$NULL$', '$NULL$', '$DCITY$', '$NULL$', '$ACITY$', '$NULL$', '$DATE$', '$DATE$', '$NULL$', '$NULL$', '$TIME$']
+
+
+Agent >Hello How may I help you?
+User  >flights from pittsburgh to baltimore on twenty eight december at afternoon
+
+
+#####The action 4
+State: [[1.    1.    1.    0.999 0.   ]]
+[ 37 101]
+['economy', 'class']
+['B-economy', 'I-economy']
+[ 37 101]
+0.999999972806
+[0.711714, 0.9089301]
+['$CLASS$', '$CLASS$']
+
+
+Agent >Please specify the class of flight?
+User  >economy class
+
+
+#####The action 12
+State: [[1.    1.    1.    0.999 0.81 ]]
+
+
+Agent >Here is you itenary
+You are travelling from pittsburgh to baltimore on twenty eight at afternoon via economy class.
+Thanks for using the flight attendant
+User  >['Thanks']
+
+
+#####The action 12
+

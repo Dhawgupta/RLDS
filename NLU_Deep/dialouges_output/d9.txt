@@ -1,0 +1,81 @@
+in memeory
+Loading the NLU model
+('model.h5', 'nlu.h5')
+in init
+in build_model
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_2 (Dense)              (None, 75)                450       
+_________________________________________________________________
+activation_1 (Activation)    (None, 75)                0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 13)                988       
+_________________________________________________________________
+activation_2 (Activation)    (None, 13)                0         
+=================================================================
+Total params: 1,438
+Trainable params: 1,438
+Non-trainable params: 0
+_________________________________________________________________
+in build_model
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_4 (Dense)              (None, 75)                450       
+_________________________________________________________________
+activation_3 (Activation)    (None, 75)                0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 13)                988       
+_________________________________________________________________
+activation_4 (Activation)    (None, 13)                0         
+=================================================================
+Total params: 1,438
+Trainable params: 1,438
+Non-trainable params: 0
+_________________________________________________________________
+in load
+Loading the model model.h5 
+Loading FIle model.h5
+in load
+Loading the model model.h5 
+State: [0. 0. 0. 0. 0.]
+[126 126  48 126  78 126 126  28]
+['flights', 'from', 'boston', 'to', 'baltimore', 'on', 'fifteenth', 'june']
+['O', 'O', 'B-fromloc.city_name', 'O', 'B-toloc.city_name', 'O', 'O', 'B-depart_date.month_name']
+[126 126  48 126  78 126 126  28]
+1.00000002982
+[0.99998176, 0.99998116, 0.99999714, 0.9999875, 0.9999981, 0.99985635, 0.3725213, 0.9470311]
+['$NULL$', '$NULL$', '$DCITY$', '$NULL$', '$ACITY$', '$NULL$', '$NULL$', '$DATE$']
+
+
+Agent >Hello How may I help you?
+User  >flights from boston to baltimore on fifteenth june
+
+
+#####The action 4
+State: [[1.    1.    0.947 0.    0.   ]]
+[126 126 126 126 126  37 101]
+['i', 'want', 'to', 'travel', 'in', 'economy', 'class']
+['O', 'O', 'O', 'O', 'O', 'B-economy', 'I-economy']
+[126 126 126 126 126  37 101]
+1.00000005997
+[0.9999957, 0.99999654, 0.99999094, 0.9999646, 0.9997491, 0.9945807, 0.94112337]
+['$NULL$', '$NULL$', '$NULL$', '$NULL$', '$NULL$', '$CLASS$', '$CLASS$']
+
+
+Agent >Please specify the class of flight?
+User  >I want to travel in economy class
+
+
+#####The action 12
+State: [[1.    1.    0.947 0.    0.968]]
+
+
+Agent >Here is you itenary
+You are travelling from boston to baltimore on june at Unknown via economy class.
+Thanks for using the flight attendant
+User  >['Thanks']
+
+
+#####The action 12

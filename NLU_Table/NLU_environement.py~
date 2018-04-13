@@ -1,0 +1,86 @@
+"""
+created : 13.3.18
+The interaction between the NLU model and the agent andetc
+Table interaaction at the moment
+
+The functions for environenent are in teh NLU_env_functions.py
+"""
+
+
+
+import numpy as np
+import sys
+import random
+import time
+# from functions import one_hot_encoding, convertState
+import pickle
+import json
+# import envOld
+import time
+from qlearn_table import Qlearn
+import matplotlib.pyplot as plt
+import argparse
+import dictionaries
+from NLU_model import NLU
+
+# construct the argument parse and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-m", "--model", required=True,
+                help="the agent model to be loaded")
+ap.add_argument("-n","--nlu", required = True, help = "the nlu model to be loaded")
+
+
+args = vars(ap.parse_args())
+
+# define the state and action sizes
+state_size = 5
+action_size  = 13
+
+# getting the file and the Q table
+
+filename = args["model"]
+print("The loading File {}".format(filename))
+
+
+#### loading the models
+# getting the q table data from the file
+data = dict()
+with open(filename, 'r') as handle:
+    data = pickle.load(handle)
+
+
+# init the agent which will give us the action
+agent = Qlearn([i for i in range(action_size)], epsilon= 0 , alpha=0.2, gamma = 0.9)
+# assining the data to the agnet
+agent.q = data.copy()
+
+
+
+
+nlu_model = NLU(filename =args["nlu"] ,load = True)
+###### models loaded ######
+
+# this dict will contins the corresponding slots value guessed by the nlu model
+guessed_slots_values = dict()
+guessed_slots_values["$ACITY$"] = "Unknown"
+guessed_slots_values["$DCITY$"] = "Unknown"
+guessed_slots_values["$DAY$"] = "Unknown"
+guessed_slots_values["$TIME$"] = "Unknown"
+guessed_slots_values["$CLASS$"] = "Unknown"
+
+# greeting the agent
+print("Agent > {}".format(dictionaries.actions_sentences[0])) # greet the user
+reply = raw_input().rstrip()
+# reply = reply.lower()
+
+# now we will feed the reply in the NLU model
+# we feed the input and get the tags approximat
+# the predicted, prob values
+[pred, prob] = nlu_model.parse_sentence(reply)
+ourtags = []
+for t in pred:
+    ourtags.append(dictionaries.labels2labels[t])
+
+print ourtags
+
+

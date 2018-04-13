@@ -1,0 +1,61 @@
+in load
+Loading the model model.h5 
+Loading FIle model.h5
+in load
+Loading the model model.h5 
+State: [0. 0. 0. 0. 0.]
+[126 126 126 126 126  48 126  78]
+['i', 'want', 'to', 'travel', 'from', 'pittsburgh', 'to', 'denver']
+['O', 'O', 'O', 'O', 'O', 'B-fromloc.city_name', 'O', 'B-toloc.city_name']
+[126 126 126 126 126  48 126  78]
+1.00000005997
+[0.9999957, 0.99999654, 0.99999106, 0.999995, 0.9999888, 0.9999919, 0.99998534, 0.9999982]
+['$NULL$', '$NULL$', '$NULL$', '$NULL$', '$NULL$', '$DCITY$', '$NULL$', '$ACITY$']
+
+
+Agent >Hello How may I help you?
+User  >I want to travel from pittsburgh to denver
+
+
+#####The action 6
+State: [[1. 1. 0. 0. 0.]]
+[126 126 126 126  27  94  28 126  33]
+['need', 'to', 'travel', 'on', 'twenty', 'eight', 'december', 'at', 'evening']
+['O', 'O', 'O', 'O', 'B-depart_date.day_number', 'I-depart_date.day_number', 'B-depart_date.month_name', 'O', 'B-depart_time.period_of_day']
+[126 126 126 126  27  94  28 126  33]
+0.999999999257
+[0.99999034, 0.99998975, 0.9999918, 0.9995983, 0.9891045, 0.9849052, 0.93454516, 0.9999652, 0.994379]
+['$NULL$', '$NULL$', '$NULL$', '$NULL$', '$DATE$', '$DATE$', '$DATE$', '$NULL$', '$TIME$']
+
+
+Agent >Specify the time and date?
+User  >Need to travel on twenty eight december at evening
+
+
+#####The action 4
+State: [[1.    1.    0.97  0.994 0.   ]]
+[126 126 126 126 126  37 101]
+['i', 'want', 'to', 'travel', 'in', 'economy', 'class']
+['O', 'O', 'O', 'O', 'O', 'B-economy', 'I-economy']
+[126 126 126 126 126  37 101]
+1.00000005997
+[0.9999957, 0.99999654, 0.99999094, 0.9999646, 0.9997491, 0.9945807, 0.94112337]
+['$NULL$', '$NULL$', '$NULL$', '$NULL$', '$NULL$', '$CLASS$', '$CLASS$']
+
+
+Agent >Please specify the class of flight?
+User  >I want to travel in economy class
+
+
+#####The action 12
+State: [[1.    1.    0.97  0.994 0.968]]
+
+
+Agent >Here is you itenary
+You are travelling from pittsburgh to denver on twenty eight december at evening via economy class.
+Thanks for using the flight attendant
+User  >['Thanks']
+
+
+#####The action 12
+

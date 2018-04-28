@@ -11,7 +11,7 @@ So ,
 ```NLU_Table``` : contains the integration of the NLU with the traditional Q_table method
 
 To run individual model its **README** is present in its respective folder.
-The folder SVM contains the code to run the SVM model with its dummy .This  model gives recommendation to the DRL method
+The folder SVM contains the code to run the SVM model with its dummy data.This  model gives recommendation to the DRL method
 
 
 
